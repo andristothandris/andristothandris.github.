@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800');
+
+/*
+Oldalsó mobilmenühöz ezt a scriptet szoktam használni:
+https://www.berriart.com/sidr/
+
+Működés közben itt meg tudod nézni:
+https://cyrex.hu/
+https://tuzszekerek.hu/
+
+*/
+
+/*
+PNG-k tömörítéséhez használatos cucc:
+https://tinypng.com/
+
+CSS gradient létrehozásához cucc:
+http://www.colorzilla.com/gradient-editor/
+
+
+box-shadow generálásához:
+https://www.cssmatic.com/box-shadow
+
+
+képgalériához:
+http://fancyapps.com/fancybox/3/
+
+
+bootstrap scrollspy plugin:
+https://getbootstrap.com/docs/4.0/components/scrollspy/
+
+
+
+Mindent tudó, szupernagyméretű slider:
+http://kenwheeler.github.io/slick/
+
+*/
+
+
+
+/*
+az elemek méretének számolásához való
+Cikk hozzá: https://cyrex.hu/2017/11/10/css-box-sizing/
+(mindig border-box-ot használunk)
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+	font-size: 18px
+}
+
+/* 768px alatt kisebb az alap betűméret,
+a többi méretet automatikusan fogja hozzászámolni
+a REM mértékegységnek köszönhetően
+betűméret megadásról cikk:
+https://cyrex.hu/2017/11/09/css-mertekegysegek/
+*/
+@media(max-width:768px) {
+	html {
+		font-size: 12px
+	}	
+}
+
+
+body {
+	font-family: 'Dosis', sans-serif;
+	background-color: #f0f1f3;
+}
+
+.box {
+	background: #000;
+	color: #fff;
+}
+
+.wrapper {
+	max-width: 1000px
+}
+
+
+
+nav {
+	background: #e09390;
+	padding: 15px 0
+}
+
+.menu-kep{
+    position: relative;
+    background: url(fejlec31.jpg);
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding-top: 250px;
+    padding-bottom: 150px;
+    line-height: 1.7;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.3)
+}
+.menu-kep .tittle{
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+
+.menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	float: right;
+	 text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+
+.menu li {
+	float: left;
+}
+
+.menu li a {
+	display: block;
+	padding: 13px 20px;
+	font-size: 1rem;
+	color: #fff;
+	text-transform: uppercase
+}
+
+.logo{
+	display: block;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+	width: 350px;
+}
+
+.mobile-menu {
+	display: none
+}
+
+.mobile-menu ul {
+	padding: 0;
+	margin: 0;
+	display: none
+}
+
+.mobile-menu li {
+	list-style: none
+}
+
+.mobile-menu a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 10px
+}
+
+.mobile-menu .open {
+	text-align: center;
+	color: #fff;
+	font-weight: bold
+}
+
+@media(max-width:1000px) {
+	.menu {
+		display: none
+	}
+	.mobile-menu {
+		display: block
+	}
+}
+
+
+.overlay{color:#FFFFFF; background-color:inherit;}
+.overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
+
+.overlay {
+    position: relative;
+    z-index: 1;
+}
+
+.kep{
+	width: 100%;
+}
+
+.box {
+    border-radius: 20px;
+    margin-bottom: 2em;
+    background: #f0f1f3;
+	text-align: center;
+	padding: 20px;
+    color: #555;
+    margin-top: 30px;
+}
+
+.box-kep{
+	width: 300px;
+}
+
+.sticky{
+	z-index: 10000;
+    position: sticky;
+    top: 0px;
+}
+
+
+.menu-kep1{
+	position: relative;
+    background: url(care.jpg);
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    /*padding-top: 360px;*/
+    /*padding-bottom: 250px;*/
+    line-height: 1.7;
+   
+}
+
+.care{
+	margin-bottom: 250px;
+	color: #909090;
+}
+
+.care1{
+	position: relative;
+	top: 150px;
+	color: #909090;
+}
+
+.carousel-control-prev-icon{
+	background-image: url(left-arrow.png)
+}
+
+.carousel-control-next-icon{
+	background-image: url(right-arrow.png)
+
+}
+
+.carousel-indicators li{
+	background-color: #909090;
+}
+
+
+/*footer */
+
+ul.list li {
+    list-style-image: url(list_arrow.png);
+    margin: 0 20px 0px;
+}
+
+.hoc {
+    /*max-width: 978px;*/
+}
+
+.hoc {
+    display: block;
+	margin: 0 auto;
+	width: 2000px;
+}
+
+.phone{
+	right: 10px;
+	position: relative;
+	bottom: 15px;
+}
+
+.phone2{
+	position: relative;
+	bottom: 10px;
+	
+}
+.cpright{
+	background: #E87471;
+	
+}
+
+.bg{
+	background-image: url(pink2.jpg);
+	width: 800px;
+	position: relative;
+	display: inline;
+	background-repeat: no-repeat;
+   
+}
+
+.ar1{
+	text-align: center;
+	color: #E09390;
+}
+
+.tr1{
+	font-weight: bold;
+}
+
+.bemut{
+	border-radius: 50%;
+    width: 300px;
+}
+
+.ss{
+	background: #fff;
+}
+
+.color{
+	color:#E09390 ;
+}
+
+
+#scroll-to-top {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	padding: 10px;
+	justify-content: center;
+	display: flex;
+	margin: 2rem;
+	cursor: pointer;
+	background-color: #E87471;
+  }
+
+  #scroll-to-top:hover {
+	background-color: #e09390;
+  }
+
+  .up{
+	width: 40px;
+	height: 40px;
+	position: relative;
+	top: 10px;
+	cursor: pointer;
+  }
+
+  
